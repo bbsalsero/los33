@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> los 33 </title>
+<script type="text/javascript">
+var i=0;	
+var logos=[
+'Logo.JPG',
+'LOS33.jpg',
+'Logo_avant.JPG',
+'0.jpg',
+'1.jpg',
+'2.jpg',
+'3.jpg'
+]
+	var change=function(){
+
+		var logo= document.getElementById('logo')
+		//console.dir(logo)
+	logo.src=logos[i]
+i++
+
+if(i == logos.length)
+	{i=0}
+
+	}
+
+
+</script>
+
+
+
+<style type="text/css">
+	body{
+background-color: black;
+/*		background: url(https://scontent-ams2-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1452153_231083613728064_1507254975_n.jpg?oh=7688b9b753419cca63897e3df4cf285d&oe=55E6CD8A) no-repeat center fixed;*/
+}
+
+
+/*
+.mail{
+background: url(./mail.png) no-repeat center fixed;
+
+}
+
+.fb{
+background: url(fb.png) no-repeat center fixed;
+
+}
+
+.charte{
+background: url(charte.png) no-repeat center fixed;
+
+}
+
+.user{
+background: url(user.png) no-repeat center fixed;
+
+}*/
+
+
+#main_ul{
+position: absolute;
+width:100%;
+height:100%;
+left:0px;
+}
+
+
+
+#main{
+position:absolute;
+width:76%;
+height: 75%;
+/*border: 1px solid black;
+-moz-box-shadow: 5px 5px 25px 5px #656565;
+-webkit-box-shadow: 5px 10px 25px 5px #656565;
+-o-box-shadow: 5px 5px 25px 5px #656565;
+box-shadow: 5px 5px 25px 5px #656565;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=50);
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;*/
+left:12.5%;
+top:12.5%;
+background-color:transparent;
+ /*#F0FDFF*/
+/*opacity:0.9;*/
+
+}
+
+li{
+	    list-style-type : none;
+}
+.info{
+/*position: absolute;
+top:5%;
+height:90%;
+width: 30%;
+left: 3%;
+border: 1px solid black;
+float : left;*/
+
+ top:1%;
+ float : left;
+/* left:3%;*/
+/* padding:2%;*/
+ width: 30%;
+    height : 90%; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
+ /*   background-color: #F4F9FD;*/
+    margin : 2.5% 1% 2.5% 1% !important;  /* Pour les navigateurs autre que IE */
+    margin :2.5% 1% 2.5% 1% ;  /* Pour IE  #9EA0A1*/
+   border : 2px solid white;
+
+}
+
+#logo{
+	-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;
+position: absolute;
+width: 100%;
+height: 90%;
+bottom:0px;
+left:0px;
+}
+
+.title{
+/*
+position:absolute;*/
+top:0px;
+left : 0px;
+width: 100%;
+height:5%;
+font-size: 24px;
+text-align: center;
+color: white;
+background-color: black;
+opacity:1;
+}
+.block{
+/*
+position:absolute;*/
+bottom:0px;
+left : 0px;
+width: 100%;
+height:95%;
+font-size: 24px;
+text-align: center;
+color: white;
+background-color: black;
+opacity:0.7;
+}
+.field{
+ float : left;
+   border : 2px solid white;
+   height:15%;
+       margin : 2px !important;  /* Pour les navigateurs autre que IE */
+    margin : 2px ;  /* Pour IE  #9EA0A1*/
+    overflow: hidden;
+}
+.large{
+
+width:100%;
+}
+.huge{
+
+width:100%;
+height:30%;
+}.big{
+
+width:70%;
+}
+.small{
+
+width:25%;
+}
+.ul_field{
+/*position: absolute;*/
+overflow: auto;
+bottom: 0px;
+height: 100%;	
+width:100%;
+background-color: transparent;
+padding: 0px;
+}
+.picto{
+
+position: relative;
+
+top:40px;
+	
+}
+.img{
+
+position: relative;
+
+top:0px;
+left:0px;
+	
+}
+
+
+#header{
+
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color: black;
+	width:100%;
+	height:10%;
+	color: white;
+	text-align: center;
+	font-size: 32px;
+}
+#minilogo{
+left:0px;
+top:0px;
+position:absolute;
+height:100%;
+width:10%
+}
+</style>
+</head>
+<body>
+
+<!-- onclick="change()" -->
+<img  id='logo'  src="./LOS33.jpg">
+<div id='header'><img  id='minilogo' onclick="change()" src="./minilogo.jpg">los33 , SalBaKiz!</div>
+<div id="main">
+
+<ul id="main_ul">
+
+<li class="info" id='1'>
+	<div class='title'>informations</div>
+	<div class='block'>
+		
+<ul class='ul_field'>
+
+
+<li class="large field ">
+	<div class='title'>mail</div>
+	<img class='picto' src="./mail.png">
+</li>
+
+
+
+<li class="huge field">
+	<div class='title'>facebook</div>
+	<img class='picto' src="./fb.png">
+</li>
+<li class="small field"> 	
+
+<div class='title'>charte</div>
+	<img class='picto' src="./charte.png">
+	</li><!-- <li class="small field"> 	
+
+<div class='title'>charte</div>
+	<img class='picto' src="./charte.png">
+	</li><li class="small field"> 	
+
+<div class='title'>charte</div>
+	<img class='picto' src="./charte.png">
+	</li><li class="small field"> 	
+
+<div class='title'>charte</div>
+	<img class='picto' src="./charte.png">
+	</li><li class="small field"> 	
+
+<div class='title'>charte</div>
+	<img class='picto' src="./charte.png">
+	</li><li class="small field"> 	
+
+<div class='title'>charte</div>
+	<img class='picto' src="./charte.png">
+	</li><li class="small field"> 	
+
+<div class='title'>charte</div>
+	<img class='picto' src="./charte.png">
+	</li>
+ -->
+
+	<li class="big field">
+
+<div class='title'>presentation</div>
+	<img class='picto' src="./show.png">
+	</li>
+<li class="big field" >
+<div class='title'>adherent</div>
+	<img class='picto' src="./user.png">
+	</li><li class="small field"><div class='title'>adherent</div>
+	<img class='picto' src="./user.png"></li>
+<li class="small field"><div class='title'>adherent</div>
+	<img class='picto' src="./user.png"></li>
+	<li class="big field"><div class='title'>adherent</div>
+	<img class='img' src="./5.jpg"></li>
+<li class="big field"><div class='title'>adherent</div>
+	<img class='picto' src="./user.png"></li><li class="small field"><div class='title'>adherent</div>
+	<img class='picto' src="./user.png"></li>
+<li class="small field"><div class='title'>adherent</div>
+	<img class='picto' src="./user.png"></li><li class="big field"><div class='title'>adherent</div>
+	<img class='picto' src="./user.png"></li>
+<li class="big field" ><div class='title'>adherent</div>
+	<img class='picto' src="./user.png"></li><li class="small field"><div class='title'>adherent</div>
+	<img class='picto' src="./user.png"></li>
+<li class="small field"><div class='title'>adherent</div>
+	<img class='picto' src="./user.png"></li><li class="big field"><div class='title'>adherent</div>
+	<img class='picto' src="./user.png"></li>
+</ul>
+
+	</div>
+
+
+</li>
+
+
+<li class="info" id='2'>
+		<div class='title'>evenements</div>
+	<div class='block'>
+		
+<ul class='ul_field'>
+<li class="big field">big field</li><li class="small field">small field</li>
+<li class="small field">small field</li><li class="big field">big field</li>
+<li class="big field" >big field</li><li class="small field">small field</li>
+<li class="small field">small field</li><li class="big field">big field</li>
+<li class="big field">big field</li><li class="small field">small field</li>
+<li class="small field">small field</li><li class="big field">big field</li>
+<li class="big field" >big field</li><li class="small field">small field</li>
+<li class="small field">small field</li><li class="big field">big field</li>
+</ul>
+
+	</div>
+
+</li>
+<li class="info" id='3'>
+		<div class='title'>partenariats</div>
+	<div class='block'>
+		
+<ul class='ul_field'>
+<li class="big field">big field</li><li class="small field">small field</li>
+<li class="small field">small field</li><li class="big field">big field</li>
+<li class="big field" >big field</li><li class="small field">small field</li>
+<li class="small field">small field</li><li class="big field">big field</li>
+<li class="big field">big field</li><li class="small field">small field</li>
+<li class="small field">small field</li><li class="big field">big field</li>
+<li class="big field" >big field</li><li class="small field">small field</li>
+<li class="small field">small field</li><li class="big field">big field</li>
+</ul>
+
+	</div>
+</li>
+
+</ul>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
